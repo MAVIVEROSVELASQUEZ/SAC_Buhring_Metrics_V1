@@ -35,36 +35,36 @@ This repository must be interpreted and cited **in conjunction with the manual**
 
 ## Repository structure
 
-The repository is organized to ensure **reproducibility, traceability, and full scientific auditability**:
-
+```text
 SAC_BUHRING_METRICS_V1/
 │
 ├─ data/
-│ ├─ raw/ # Original input data (DEM, thalweg, edges)
-│ └─ processed/ # Processed and derived pipeline data
+│  ├─ raw/                    # Original input data (DEM, thalweg, edges)
+│  └─ processed/              # Processed and derived pipeline data
 │
-├─ docs/ # Technical and auxiliary documentation
+├─ docs/                      # Technical and auxiliary documentation
 │
-├─ outputs/ # Pipeline results and visualizations
-│ └─ validation_profiles/
-│ └─ All_Profiles/ # Batch validation figures (all profiles)
+├─ outputs/                   # Pipeline results and visualizations
+│  └─ validation_profiles/
+│     └─ All_Profiles/
 │
-├─ src/ # Reproducible computational implementation
-│ ├─ 01_prepare_dem.py
-│ ├─ 02_generate_thalweg_points_2km.py
-│ ├─ 03_generate_transversal_profiles.py
-│ ├─ 04_extract_profile_keypoints_P1_P2_P3.py
-│ ├─ 05_calculate_P4_Wmax_Dmax_intersection.py
-│ ├─ 06_integrate_profile_keypoints_P1_P2_P3_P4.py
-│ ├─ 07_calculate_buhring_metrics.py
-│ ├─ 08_test_single_profile_geometry.py
-│ └─ 09_All_profiles_SAC.py
+├─ src/                       # Reproducible computational implementation
+│  ├─ 01_prepare_dem.py
+│  ├─ 02_generate_thalweg_points_2km.py
+│  ├─ 03_generate_transversal_profiles.py
+│  ├─ 04_extract_profile_keypoints_P1_P2_P3.py
+│  ├─ 05_calculate_P4_Wmax_Dmax_intersection.py
+│  ├─ 06_integrate_profile_keypoints_P1_P2_P3_P4.py
+│  ├─ 07_calculate_buhring_metrics.py
+│  ├─ 08_test_single_profile_geometry.py
+│  └─ 09_All_profiles_SAC.py
 │
-├─ .gitignore 
-├─ CITATION.cff 
-├─ LICENSE 
-├─ README.md 
-└─ requirements.txt 
+├─ .gitignore
+├─ CITATION.cff
+├─ LICENSE
+├─ README.md
+└─ requirements.txt
+```
 
 
 The pipeline consists of **nine strictly sequential stages**, executed from DEM preparation to **individual and global geomorphological validation** of transverse profiles.
