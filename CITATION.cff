@@ -1,9 +1,11 @@
-cff-version: 1.2.0
+cff-version: 1.0.0
 title: SAC_Buhrig_Metrics_V1
-version: "1.0.3"
+version: "1.0.4"
 type: software
-message: If you use this software, please cite it as below.
+message: "If you use this software, please cite it as below."
+
 authors:
   - given-names: Marco Antonio
     family-names: Viveros Velasquez
+
 license: NOASSERTION
