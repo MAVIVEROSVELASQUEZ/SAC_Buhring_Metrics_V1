@@ -1,4 +1,4 @@
-# Buhrig_Metrics_Reproducible_Pipeline
+# SAC_Buhrig_Metrics_V1
 
 **Reproducible geometric and computational pipeline for Bührig-type metrics (Wmax, Dmax, SWmax) in submarine canyons**
 
@@ -88,7 +88,7 @@ The repository is organized to ensure **reproducibility, traceability, and full 
 ## Repository structure
 
 ```text
-Buhrig_Metrics_Reproducible_Pipeline
+SAC_Buhrig_Metrics_V1
 │
 ├─ data/
 │  ├─ raw/                    # Original input data (DEM, thalweg, edges)
